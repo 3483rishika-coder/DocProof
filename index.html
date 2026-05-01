@@ -38,22 +38,47 @@
             pointer-events: none; z-index: 99999; opacity: 0.04;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
         }
+/* Restored Vibrant Ambient Background Gradients */
+.ambient-orb {
+    position: fixed; 
+    border-radius: 50%; 
+    filter: blur(60px); /* Sharper blur makes them more defined like the first image */
+    opacity: 0.8;        /* Increased from 0.4 to 0.8 for high visibility */
+    z-index: 9; 
+    pointer-events: none;
+    mix-blend-mode: screen; 
+    animation: floatOrb 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-        /* Ambient Animated Background Gradients & 3D Elements */
-        .ambient-orb {
-            position: fixed; border-radius: 50%; filter: blur(80px); opacity: 1; z-index: 0; pointer-events: none;
-            animation: floatOrb 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .orb-1 { width: 500px; height: 500px; background: rgba(208, 0, 255, 0.95); top: -100px; left: -100px; animation-delay: 0s; }
-        .orb-2 { width: 600px; height: 600px; background: rgba(0, 102, 255, 0.9); bottom: -200px; right: -100px; animation-delay: -5s; }
-        .orb-3 { width: 400px; height: 400px; background: rgba(208, 0, 255, 0.9); top: 40%; left: 60%; animation-delay: -10s; }
+.orb-1 { 
+    width: 600px; 
+    height: 600px; 
+    background: rgba(208, 0, 255, 0.6); /* Vibrant Purple */
+    top: -100px; 
+    left: -100px; 
+    animation-delay: 0s; 
+    box-shadow: 0 0 120px rgba(208, 0, 255, 0.4); 
+}
 
-        @keyframes floatOrb {
-            0% { transform: translate(0, 0) scale(1); }
-            50% { transform: translate(50px, 100px) scale(1.1); }
-            100% { transform: translate(-50px, -50px) scale(0.9); }
-        }
+.orb-2 { 
+    width: 700px; 
+    height: 700px; 
+    background: rgba(0, 102, 255, 0.6); /* Vibrant Blue/Cyan */
+    bottom: -200px; 
+    right: -100px; 
+    animation-delay: -5s; 
+    box-shadow: 0 0 120px rgba(0, 102, 255, 0.4); 
+}
 
+.orb-3 { 
+    width: 500px; 
+    height: 500px; 
+    background: rgba(208, 0, 255, 0.5); /* Mid-screen accent */
+    top: 30%; 
+    left: 50%; 
+    animation-delay: -10s; 
+    box-shadow: 0 0 100px rgba(208, 0, 255, 0.3); 
+}
         @keyframes float3D {
             0% { transform: translateY(0) rotateX(0) rotateY(0) rotateZ(0); }
             50% { transform: translateY(-80px) rotateX(180deg) rotateY(90deg) rotateZ(45deg); }
