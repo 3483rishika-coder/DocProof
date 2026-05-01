@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs
+*.njsproj
+*.sln
+*.sw?
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Build outputs (if you add a bundler later)
+dist/
+build/
+out/
