@@ -1,7 +1,3 @@
-# Docproof
-Here is the expanded and highly detailed version of the `README.md`. The technology stack section has been broken down into specific architectural layers, and the descriptions of the core protocol and modules have been fleshed out to provide a deeper technical understanding of how the application operates natively within the browser.
-
-***
 
 # DocProof | The Cryptographic Standard
 
